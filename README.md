@@ -37,11 +37,23 @@ O diagrama de blocos detalhado abaixo, ajuda a ilustrar a conexão entre o Raspb
 
 ### Comunicação I2C
 
-Explicação de como o Raspberry Pi Pico se comunica com o sensor I2C, incluindo detalhes técnicos sobre o protocolo I2C.
+A comunicação I2C (Inter-Integrated Circuit) é um protocolo de comunicação em série usado para conectar dispositivos de baixa velocidade como microcontroladores, sensores, e, no caso do seu projeto, um display LCD. I2C é um protocolo de comunicação de dois fios que utiliza linhas SCL (Serial Clock) e SDA (Serial Data). O SCL é usado para sincronizar todos os dispositivos na linha de comunicação I2C, enquanto o SDA é usado para a transmissão de dados.
+
+Cada dispositivo conectado ao barramento I2C possui um endereço único. No caso do display LCD I2C, ele terá um endereço específico que o microcontrolador usa para se comunicar diretamente com ele. Na comunicação I2C, há sempre um mestre (neste caso, o Raspberry Pi Pico) e um ou mais escravos (como o display LCD). O mestre inicia a comunicação e gera o sinal de clock necessário para a transferência de dados.
+
+A comunicação I2C é vantajosa por sua simplicidade e eficiência, especialmente para dispositivos como displays LCD, onde a quantidade de dados transferidos não é extensa e a velocidade de comunicação não precisa ser muito alta. Além disso, o uso de apenas dois fios para comunicação facilita o design do circuito e a redução do uso de pinos no microcontrolador.
+
+(SOUZA, F. Comunicação I2C. Disponível em: <https://embarcados.com.br/comunicacao-i2c/>.)
 
 ### Comunicação Serial
 
-Descrição da comunicação serial entre o Raspberry Pi Pico e o PC, incluindo a configuração necessária e como os dados são transmitidos.
+A comunicação serial entre o computador e o microcontrolador, como o Raspberry Pi Pico, é uma maneira fundamental de trocar dados entre esses dispositivos. Este processo envolve usar uma das interfaces de comunicação serial do Raspberry Pi Pico, tipicamente UART (Universal Asynchronous Receiver/Transmitter), para transmitir e receber dados.
+
+Primeiro, é necessário configurar a interface serial no Raspberry Pi Pico. Isso envolve definir os pinos para transmissão (TX) e recepção (RX) de dados, além de configurar a taxa de transmissão (baud rate), que deve ser a mesma no microcontrolador e no computador. A conexão física pode ser feita diretamente através de um cabo USB, se o Raspberry Pi Pico suportar comunicação serial sobre USB, ou através de um adaptador USB para TTL (Transistor-Transistor Logic) se uma conexão direta não for possível.
+
+Uma vez estabelecida a conexão, o microcontrolador pode enviar dados para o computador. Isso é feito escrevendo dados no buffer de transmissão da UART. Quando o buffer é preenchido, os dados são enviados sequencialmente através do pino TX. De maneira similar, o microcontrolador pode receber dados do computador. Os dados enviados pelo computador são recebidos no pino RX do microcontrolador e armazenados no buffer de recepção da UART. O microcontrolador pode então ler esses dados.
+
+(REZENDE, R. Raspberry Pi - Comunicação Serial (UART) entre a Raspberry Pi e Arduino em Python e Wiring. Disponível em: <https://embarcados.com.br/raspberry-pi-comunicacao-serial-uart/>.)
 
 ## Vídeo Demonstrativo
 
