@@ -11,7 +11,6 @@ Este documento README destina-se a fornecer todas as informações necessárias 
 - [Comunicação I2C e Serial](#comunicação-i2c-e-serial)
 - [Vídeo Demonstrativo](#vídeo-demonstrativo)
 - [Como Usar](#como-usar)
-- [Licença](#licença)
 
 ## Descrição do Hardware
 
