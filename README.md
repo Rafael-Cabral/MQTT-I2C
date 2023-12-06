@@ -7,10 +7,15 @@ O objetivo deste projeto é fornecer um dispositivo confiável e fácil de usar 
 Este documento README destina-se a fornecer todas as informações necessárias para compreender, montar e operar o Medidor de Temperatura com Display LED I2C. Aqui você encontrará detalhes sobre o hardware utilizado, a descrição do funcionamento da comunicação I2C e serial, além de um vídeo demonstrativo que ilustra o funcionamento prático do projeto.
 
 ## Conteúdo
-- [Descrição do Hardware](#descrição-do-hardware)
-- [Comunicação I2C e Serial](#comunicação-i2c-e-serial)
-- [Vídeo Demonstrativo](#vídeo-demonstrativo)
-- [Como Usar](#como-usar)
+- [Medidor de Temperatura com Comunicação Serial I2C](#medidor-de-temperatura-com-comunicação-serial-i2c)
+	- [Conteúdo](#conteúdo)
+	- [Descrição do Hardware](#descrição-do-hardware)
+		- [Diagrama de Blocos](#diagrama-de-blocos)
+	- [Comunicação I2C e Serial](#comunicação-i2c-e-serial)
+		- [Comunicação I2C](#comunicação-i2c)
+		- [Comunicação Serial](#comunicação-serial)
+	- [Vídeo Demonstrativo](#vídeo-demonstrativo)
+	- [Como Usar](#como-usar)
 
 ## Descrição do Hardware
 
@@ -59,6 +64,8 @@ Uma vez estabelecida a conexão, o microcontrolador pode enviar dados para o com
 (REZENDE, R. Raspberry Pi - Comunicação Serial (UART) entre a Raspberry Pi e Arduino em Python e Wiring. Disponível em: <https://embarcados.com.br/raspberry-pi-comunicacao-serial-uart/>.)
 
 ## Vídeo Demonstrativo
+
+![](IMG/rasp.jpeg)
 
 O vídeo demonstrativo pode ser acessado através [desse link, clicando aqui](https://youtu.be/aSM7Uxoy3-Q).
 
