@@ -30,7 +30,11 @@ O diagrama de blocos detalhado abaixo, ajuda a ilustrar a conexão entre o Raspb
 - Uma representação clara de como cada componente está conectado ao microcontrolador.
 - Detalhes relevantes para cada componente, como pinagem e funções.
 
-![]()
+![Diagrama de Blocos](./IMG/Diagrama_Bloco.drawio.png)
+
+Abaixo, você encontra o DataSheet do Raspberry Pi Pico W, que facilitará sua implementação:
+
+![Rasp](./IMG/Raspberry_Pi_Pico_W_Manual01.jpeg)
 
 ## Comunicação I2C e Serial
 
@@ -61,7 +65,8 @@ O vídeo demonstrativo pode ser acessado através [desse link, clicando aqui](ht
 Como complemento, abaixo estão os links dos vídeos anteriores da nossa solução:
 
 [MQTT + Medidor de temperatura (2ª ponderada)](https://youtu.be/3DOCCmh5PPg?si=sueRGbII2pGEGgl7)
-[Medidor de temperatura + Front (1ª ponderada](https://youtu.be/XEdLyp86nX0)
+
+[Medidor de temperatura + Front (1ª ponderada)](https://youtu.be/XEdLyp86nX0)
 
 ## Como Usar
 
